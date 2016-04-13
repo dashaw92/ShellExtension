@@ -6,7 +6,7 @@ This extension provides a context menu entry for folders that allows a quick way
 
 While browsing folders, how many times have you had to go through folder after folder to be greeted with, you guessed it, another folder?
 
-GitHub provides a very convinient solution to this and compacts empty folders into a single link:
+GitHub provides a very convenient solution to this and compacts empty folders into a single link:
 
 `"/src/.../somefolder/"`
 
