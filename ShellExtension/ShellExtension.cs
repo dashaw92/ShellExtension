@@ -27,9 +27,7 @@ namespace ShellExtension
 
 			var jumpToFolder = new ToolStripMenuItem
 			{
-				Text = "Jump to non-empty",
-				Alignment = ToolStripItemAlignment.Right,
-				BackColor = Color.Aqua
+				Text = "Jump to non-empty"
 			};
 
 			jumpToFolder.Click += (sender, args) => enumerateFolders();
@@ -44,7 +42,7 @@ namespace ShellExtension
 			string selected = SelectedItemPaths.ElementAt(0);
 			while (true)
 			{
-				if (Directory.GetFiles(selected).Length > 0 || Directory.GetDirectories(selected).Length > 1)
+				if (Directory.GetFiles(selected).Length > 0 || Directory.GetDirectories(selected).Length > 1 || (Directory.GetDirectories(selected).Length < 1 && Directory.GetFiles(selected).Length < 1))
 				{
 					break;
 				}
